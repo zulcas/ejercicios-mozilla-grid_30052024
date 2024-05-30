@@ -25,12 +25,21 @@
       color: #fff;
       padding: .5em;
     }
+    .one{grid-area: one;}
+    .two{grid-area: two;}
+    .three{grid-area: three;}
+    .four{grid-area: four;}
 
     .grid {
       display: grid;
       grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+        'one one'
+        'two three'
+        '. four';
       gap: 10px;
     }
+    
   </style>
 
 </head>
